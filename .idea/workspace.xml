@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e37fe20-b405-447f-be30-57c82c2bde4a" name="Changes" comment="" />
+    <list default="true" id="7e37fe20-b405-447f-be30-57c82c2bde4a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -18,22 +23,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Shell Script.reset-db.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.start-db.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.teardown-db.sh (1).executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.teardown-db.sh.executor&quot;: &quot;Run&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/stevenwickers/source/postgreSql/postgres-movie-platform&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Shell Script.reset-db.sh.executor": "Run",
+    "Shell Script.start-db.sh.executor": "Run",
+    "Shell Script.teardown-db.sh (1).executor": "Run",
+    "Shell Script.teardown-db.sh.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "/Users/stevenwickers/source/repos/Postgres-Movie-Platform",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/sql" />
@@ -135,6 +143,7 @@
       <workItem from="1776188586342" duration="5759000" />
       <workItem from="1776270519246" duration="1565000" />
       <workItem from="1776354381502" duration="2465000" />
+      <workItem from="1777316091351" duration="3733000" />
     </task>
     <servers />
   </component>

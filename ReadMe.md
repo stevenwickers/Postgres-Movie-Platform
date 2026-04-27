@@ -5,6 +5,12 @@
 ![pgAdmin](https://img.shields.io/badge/pgAdmin-UI-orange)
 ![Cross Platform](https://img.shields.io/badge/Platform-Mac%20%7C%20Linux%20%7C%20Windows-green)
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="./assets/demo.gif" alt="Movie App Demo" width="900" />
+</p>
+
 ## Overview
 
 Postgres Movie Platform is a containerized PostgreSQL project that boots a movie dataset, a relational schema, and a small database-function API for querying and managing movies.
