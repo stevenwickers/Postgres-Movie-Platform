@@ -1,19 +1,90 @@
 # Postgres Movie Platform
 
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)
-![pgAdmin](https://img.shields.io/badge/pgAdmin-UI-orange)
-![Cross Platform](https://img.shields.io/badge/Platform-Mac%20%7C%20Linux%20%7C%20Windows-green)
+---
 
 ## 🎬 Demo
 
-<p align="center">
-  <img src="./assets/demo.gif" alt="Movie App Demo" width="900" />
-</p>
+### 🔍 Fetch Movies
 
-## Overview
+![Fetch Movies](./assets/demo-select.gif)
 
-Postgres Movie Platform is a containerized PostgreSQL project that boots a movie dataset, a relational schema, and a small database-function API for querying and managing movies.
+### ✨ Create Movie
+
+![Create Movie](./assets/demo-create.gif)
+
+### ✏️ Update Movie
+
+![Update Movie](./assets/demo-update.gif)
+
+### 🩹 Patch Movie
+
+![Patch Movie](./assets/demo-patch.gif)
+
+### 🗑️ Delete Movie
+
+![Delete Movie](./assets/demo-delete.gif)
+
+### ⚙️ Setup & Docker
+
+![Setup](./assets/demo-init.gif)
+
+![Docker](./assets/demo-docker.gif)
+
+---
+
+## ⭐ Key Concept
+
+This project provides the shared PostgreSQL data platform used by both the Node.js and .NET APIs, exposing a function-based SQL layer that supports filtering, paging, and CRUD operations without duplicating logic in application code.
+
+
+## 🏗️ Platform Architecture
+
+```mermaid
+flowchart TD
+
+%% Layers
+subgraph UI["🎨 Frontend Layer"]
+  ReactUI["React Movie Dashboard<br/>Filtering • CRUD • API Toggle"]
+end
+
+subgraph API["⚙️ API Layer"]
+  NodeAPI["NodeMovieApi<br/>TypeScript • Express<br/>REST + GraphQL"]
+  DotNetAPI["DotNetMovieApi<br/>.NET Minimal APIs • C#<br/>REST + GraphQL"]
+end
+
+subgraph DATA["🐘 Data Platform Layer"]
+  Postgres["Postgres Movie Platform<br/>PostgreSQL • Docker • pgAdmin"]
+  Functions["SQL Function API<br/>Filtering • Paging • Sorting • CRUD"]
+  Tables["Relational Model<br/>movies • genres • movie_genres"]
+end
+
+ReactUI --> NodeAPI
+ReactUI --> DotNetAPI
+
+NodeAPI --> Functions
+DotNetAPI --> Functions
+
+Functions --> Tables
+Tables --> Postgres
+
+%% Styling
+classDef frontend fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a;
+classDef api fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a;
+classDef data fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#0f172a;
+
+class ReactUI frontend;
+class NodeAPI,DotNetAPI api;
+class Postgres,Functions,Tables data;
+
+```
+
+### 💡 Architecture Insight
+
+This platform centralizes data logic in PostgreSQL, allowing both Node.js and .NET APIs to support REST and GraphQL without duplicating filtering, paging, or CRUD logic.
+
+## 🚀 Capabilities
+
+A containerized PostgreSQL data platform that powers both REST and GraphQL APIs, providing a reusable function-based query layer for filtering, paging, and CRUD operations.
 
 It is designed to give you:
 - A reproducible local PostgreSQL environment
@@ -22,7 +93,11 @@ It is designed to give you:
 - A function-based SQL API for reads, filtering, paging, create, update, and delete flows
 - A ready-to-use pgAdmin instance for exploring the database visually
 
-## What The App Contains
+## 🧠 Why This Project
+
+This project demonstrates how complex query logic can be centralized in the database using PostgreSQL functions, enabling multiple API implementations (Node and .NET) to share a single source of truth for filtering, paging, and data manipulation.
+
+## 📦 Project Structure
 
 ### Infrastructure
 - `docker-compose.yml`
@@ -47,16 +122,6 @@ It is designed to give you:
 ### Example Queries
 - `docs/sql/function_api_smoke_test.sql`
 - `docs/sql/search_functions.sql`
-
-## Architecture
-
-```text
-pgAdmin -> PostgreSQL -> wickers schema
-                         |- movies
-                         |- genres
-                         |- movie_genres
-                         |- SQL functions API
-```
 
 ## Database Design
 
@@ -255,6 +320,18 @@ Start Docker Desktop or your local Docker daemon before running any script.
 
 ### Clean rebuild needed
 If the schema or function definitions drift during development, run the reset script to recreate the environment from scratch.
+
+## 🔗 Related Projects
+
+- DotNetMovieApi (.NET API implementation)
+- NodeMovieApi (TypeScript API implementation)
+
+## 💡 Project Highlights
+
+- Provides a reusable SQL function layer for multiple APIs
+- Eliminates duplicated filtering and paging logic across services
+- Fully containerized with Docker and pgAdmin
+- Designed for reproducible local development environments
 
 ## Author
 
