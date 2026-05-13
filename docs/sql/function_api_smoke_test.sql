@@ -10,16 +10,16 @@ BEGIN;
 SELECT wickers.delete_movie(m.id)
 FROM wickers.movies m
 WHERE m.movie_name IN (
-    'SQL Function Test Movie',
-    'SQL Function Test Movie Updated',
-    'SQL Function Test Movie GraphQL'
+   'SQL Function Test Movie',
+   'SQL Function Test Movie Updated',
+   'SQL Function Test Movie GraphQL'
 );
 
 -- -----------------------------------------------------------------------------
 -- Read function checks
 -- -----------------------------------------------------------------------------
 SELECT * FROM wickers.get_movies();
-SELECT * FROM wickers.get_movies(1, 10);
+SELECT * FROM wickers.get_movies(2, 10);
 SELECT * FROM wickers.get_movies(1, 10, 'movie_name', 'asc');
 SELECT * FROM wickers.get_movies(1, 10, 'movie_name', 'desc');
 
@@ -29,9 +29,7 @@ SELECT * FROM wickers.get_movies('A', 'starts');
 SELECT * FROM wickers.get_movies('S', 'ends', 1, 5, 'movie_name', 'desc');
 SELECT * FROM wickers.get_movies('Z', 'contains', 1, 10);
 
-SELECT * FROM wickers.get_movies(
-    p_genres => ARRAY['Comedy']
-);
+SELECT * FROM wickers.get_movies(p_genres => ARRAY['Horror']);
 
 SELECT * FROM wickers.get_movies(
     p_release_date_from => '2000-01-01',
@@ -48,24 +46,25 @@ SELECT * FROM wickers.get_movies(
 
 SELECT wickers.get_movies_count();
 SELECT wickers.get_movies_count(
-    p_genres => ARRAY[]::text[]
+   p_genres => ARRAY[]::text[]
 );
+
 SELECT wickers.get_movies_count(
-    p_search => 'star',
-    p_search_mode => 'starts',
-    p_genres => ARRAY['Sci-Fi']
+   p_search => 'star',
+   p_search_mode => 'starts',
+   p_genres => ARRAY['Sci-Fi']
 );
 
 SELECT * FROM wickers.get_genres();
 
 SELECT *
 FROM wickers.get_genre_by_id(
-    (SELECT g.id FROM wickers.genres g ORDER BY g.name LIMIT 1)
+        (SELECT g.id FROM wickers.genres g ORDER BY g.name LIMIT 1)
 );
 
 SELECT *
 FROM wickers.get_movie_by_id(
-    (SELECT m.id FROM wickers.movies m ORDER BY m.movie_name LIMIT 1)
+        (SELECT m.id FROM wickers.movies m ORDER BY m.movie_name LIMIT 1)
 );
 
 -- -----------------------------------------------------------------------------
@@ -81,57 +80,27 @@ SELECT * FROM wickers.create_movie(
 );
 
 SELECT *
-FROM wickers.get_movie_by_id(
-    (
-        SELECT m.id
-        FROM wickers.movies m
-        WHERE m.movie_name = 'SQL Function Test Movie'
-    )
+FROM wickers.get_movie_by_id('');
+
+SELECT * FROM wickers.update_movie('',
+   'SQL Function Test Movie Updated',
+   '2026-03-16',
+   125.00,
+   60.00,
+   35.00,
+   ARRAY['Drama', 'Thriller']
 );
 
-SELECT * FROM wickers.update_movie(
-    (
-        SELECT m.id
-        FROM wickers.movies m
-        WHERE m.movie_name = 'SQL Function Test Movie'
-    ),
-    'SQL Function Test Movie Updated',
-    '2026-03-16',
-    125.00,
-    60.00,
-    35.00,
-    ARRAY['Drama', 'Thriller']
+SELECT * FROM wickers.update_graphql_movie('',
+   '{
+       "movie_name": "SQL Function Test Movie GraphQL",
+       "domestic_gross": 45.00,
+       "genre_names": ["Comedy", "Mystery"]
+   }'::jsonb
 );
 
-SELECT * FROM wickers.update_graphql_movie(
-    (
-        SELECT m.id
-        FROM wickers.movies m
-        WHERE m.movie_name = 'SQL Function Test Movie Updated'
-    ),
-    '{
-        "movie_name": "SQL Function Test Movie GraphQL",
-        "domestic_gross": 45.00,
-        "genre_names": ["Drama", "Mystery"]
-    }'::jsonb
-);
 
-SELECT *
-FROM wickers.get_movie_by_id(
-    (
-        SELECT m.id
-        FROM wickers.movies m
-        WHERE m.movie_name = 'SQL Function Test Movie GraphQL'
-    )
-);
-
-SELECT wickers.delete_movie(
-    (
-        SELECT m.id
-        FROM wickers.movies m
-        WHERE m.movie_name = 'SQL Function Test Movie GraphQL'
-    )
-);
+SELECT wickers.delete_movie('');
 
 SELECT * FROM wickers.get_movies(
     p_search => 'SQL Function Test Movie',
