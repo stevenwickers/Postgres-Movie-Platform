@@ -357,8 +357,8 @@ Production-minded Retrieval-Augmented Generation (RAG) application using OpenAI 
 * 🌐 [Portfolio](https://stevenwickers.com/)
 * 📧 Email: [stevenwickers@gmail.com](mailto:stevenwickers@gmail.com)
 
-## Author
+## 👨‍💻 Author
 
 Steven Wickers
-Senior / Lead Frontend Engineer
+Senior Frontend Engineer
 React, TypeScript, Node, C#, PostgreSQL, Cloud
