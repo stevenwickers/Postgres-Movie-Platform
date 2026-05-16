@@ -327,11 +327,21 @@ If the schema or function definitions drift during development, run the reset sc
 
 ## 🔗 Related Projects
 
-- [DotNetMovieApi](https://github.com/stevenwickers/DotNetMovieApi) (.NET API implementation) 
-- [NodeMovieApi](https://github.com/stevenwickers/NodeMovieApi) (TypeScript API implementation) 
-- [Movie-UI-Dashboard](https://github.com/stevenwickers/Movie-UI-Dashboard)
-- [DevAssist-AI](https://github.com/stevenwickers/DevAssist-AI)
+### 🎬 [DotNetMovieApi](https://www.youtube.com/watch?v=q-9eWAzOLdA)
+ASP.NET Core Minimal API implementation built on top of the Postgres Movie Platform, exposing shared PostgreSQL functions through REST and GraphQL endpoints.
+[Project](https://github.com/stevenwickers/DotNetMovieApi)
 
+### ⚡ [NodeMovieApi](https://www.youtube.com/watch?v=GLjxuYa2Ttc)
+Node.js + TypeScript API implementation using Express and GraphQL Yoga, demonstrating reusable backend architecture and centralized data access patterns.
+[Project](https://github.com/stevenwickers/NodeMovieApi)
+
+### 🖥 [Movie-UI-Dashboard](https://www.youtube.com/watch?v=0U7bPBvNf9Y)
+React + TypeScript frontend application showcasing REST and GraphQL integration, advanced filtering, pagination, sorting, and reusable UI architecture.
+[Project](https://github.com/stevenwickers/Movie-UI-Dashboard)
+
+### 🧠 [DevAssist-AI](https://www.youtube.com/watch?v=m34JRMG6SjQ)
+Production-minded Retrieval-Augmented Generation (RAG) application using OpenAI embeddings, semantic retrieval, and centralized AI orchestration workflows.
+[project](https://github.com/stevenwickers/DevAssist-AI)
 
 ## 💡 Project Highlights
 
