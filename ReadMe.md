@@ -2,6 +2,10 @@
 
 ---
 
+## 🎥 Architecture Walkthrough
+
+[![Postgres Movie Platform Walkthrough](./assets/postgres-movie-platform.png)](https://www.youtube.com/watch?v=QpMMaJEFxmc&t)
+
 ## 🎬 Demo
 
 ### 🔍 Fetch Movies
@@ -323,8 +327,11 @@ If the schema or function definitions drift during development, run the reset sc
 
 ## 🔗 Related Projects
 
-- DotNetMovieApi (.NET API implementation)
-- NodeMovieApi (TypeScript API implementation)
+- [DotNetMovieApi](https://github.com/stevenwickers/DotNetMovieApi) (.NET API implementation) 
+- [NodeMovieApi](https://github.com/stevenwickers/NodeMovieApi) (TypeScript API implementation) 
+- [Movie-UI-Dashboard](https://github.com/stevenwickers/Movie-UI-Dashboard)
+- [DevAssist-AI](https://github.com/stevenwickers/DevAssist-AI)
+
 
 ## 💡 Project Highlights
 
@@ -332,6 +339,13 @@ If the schema or function definitions drift during development, run the reset sc
 - Eliminates duplicated filtering and paging logic across services
 - Fully containerized with Docker and pgAdmin
 - Designed for reproducible local development environments
+
+## 📬 Contact
+
+* 💼 [LinkedIn](https://www.linkedin.com/in/stevenwickers/)
+* ▶️ [YouTube](https://www.youtube.com/@StevenWickersEngineering)
+* 🌐 [Portfolio](https://stevenwickers.com/)
+* 📧 Email: [stevenwickers@gmail.com](mailto:stevenwickers@gmail.com)
 
 ## Author
 
