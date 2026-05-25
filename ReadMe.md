@@ -327,21 +327,21 @@ If the schema or function definitions drift during development, run the reset sc
 
 ## 🔗 Related Projects
 
-### 🎬 [DotNetMovieApi](https://www.youtube.com/watch?v=q-9eWAzOLdA)
+### 🎬 [DotNetMovieApi](https://www.youtube.com/watch?v=q-9eWAzOLdA){:target="_blank"}
 ASP.NET Core Minimal API implementation built on top of the Postgres Movie Platform, exposing shared PostgreSQL functions through REST and GraphQL endpoints.
-[Project](https://github.com/stevenwickers/DotNetMovieApi)
+[Project](https://github.com/stevenwickers/DotNetMovieApi){:target="_blank"}
 
-### ⚡ [NodeMovieApi](https://www.youtube.com/watch?v=GLjxuYa2Ttc)
+### ⚡ [NodeMovieApi](https://www.youtube.com/watch?v=GLjxuYa2Ttc){:target="_blank"}
 Node.js + TypeScript API implementation using Express and GraphQL Yoga, demonstrating reusable backend architecture and centralized data access patterns.
-[Project](https://github.com/stevenwickers/NodeMovieApi)
+[Project](https://github.com/stevenwickers/NodeMovieApi){:target="_blank"}
 
-### 🖥 [Movie-UI-Dashboard](https://www.youtube.com/watch?v=0U7bPBvNf9Y)
+### 🖥 [Movie-UI-Dashboard](https://www.youtube.com/watch?v=0U7bPBvNf9Y){:target="_blank"}
 React + TypeScript frontend application showcasing REST and GraphQL integration, advanced filtering, pagination, sorting, and reusable UI architecture.
-[Project](https://github.com/stevenwickers/Movie-UI-Dashboard)
+[Project](https://github.com/stevenwickers/Movie-UI-Dashboard){:target="_blank"}
 
-### 🧠 [DevAssist-AI](https://www.youtube.com/watch?v=m34JRMG6SjQ)
+### 🧠 [DevAssist-AI](https://www.youtube.com/watch?v=m34JRMG6SjQ){:target="_blank"}
 Production-minded Retrieval-Augmented Generation (RAG) application using OpenAI embeddings, semantic retrieval, and centralized AI orchestration workflows.
-[project](https://github.com/stevenwickers/DevAssist-AI)
+[project](https://github.com/stevenwickers/DevAssist-AI){:target="_blank"}
 
 ## 💡 Project Highlights
 
@@ -352,9 +352,9 @@ Production-minded Retrieval-Augmented Generation (RAG) application using OpenAI 
 
 ## 📬 Contact
 
-* 💼 [LinkedIn](https://www.linkedin.com/in/stevenwickers/)
-* ▶️ [YouTube](https://www.youtube.com/@StevenWickersEngineering)
-* 🌐 [Portfolio](https://stevenwickers.com/)
+* 💼 [LinkedIn](https://www.linkedin.com/in/stevenwickers/){:target="_blank"}
+* ▶️ [YouTube](https://www.youtube.com/@StevenWickersEngineering){:target="_blank"}
+* 🌐 [Portfolio](https://stevenwickers.com/){:target="_blank"}
 * 📧 Email: [stevenwickers@gmail.com](mailto:stevenwickers@gmail.com)
 
 ## 👨‍💻 Author
