@@ -6,6 +6,14 @@
 
 [![Postgres Movie Platform Walkthrough](./assets/postgres-movie-platform.png)](https://www.youtube.com/watch?v=QpMMaJEFxmc&t)
 
+---
+
+### ▶️ [Youtube](https://www.youtube.com/watch?v=QpMMaJEFxmc)
+Centralized PostgreSQL data platform featuring Dockerized infrastructure, overloaded SQL functions, reusable query architecture, and shared business logic powering multiple APIs and applications.
+[project](https://github.com/stevenwickers/Postgres-Movie-Platform)
+
+---
+
 ## 🎬 Demo
 
 ### 🔍 Fetch Movies
