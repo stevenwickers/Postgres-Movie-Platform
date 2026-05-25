@@ -2,7 +2,7 @@
 
 ---
 
-## 🎥 Architecture Walkthrough - Youtube
+## 🎥 Architecture Walkthrough
 
 [![Postgres Movie Platform Walkthrough](./assets/postgresMoviePlatform.png)](https://www.youtube.com/watch?v=QpMMaJEFxmc&t)
 
