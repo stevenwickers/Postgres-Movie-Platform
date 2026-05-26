@@ -341,7 +341,7 @@ React + TypeScript frontend application showcasing REST and GraphQL integration,
 
 ### 🧠 [DevAssist-AI](https://www.youtube.com/watch?v=m34JRMG6SjQ)
 Production-minded Retrieval-Augmented Generation (RAG) application using OpenAI embeddings, semantic retrieval, and centralized AI orchestration workflows.
-[project](https://github.com/stevenwickers/DevAssist-AI)
+[Project](https://github.com/stevenwickers/DevAssist-AI)
 
 ## 💡 Project Highlights
 
@@ -359,6 +359,8 @@ Production-minded Retrieval-Augmented Generation (RAG) application using OpenAI 
 
 ## 👨‍💻 Author
 
-Steven Wickers
+**Steven Wickers**
 Senior Frontend Engineer
-React, TypeScript, Node, C#, PostgreSQL, Cloud
+
+React • TypeScript • Node.js • C# • PostgreSQL • Cloud
+
